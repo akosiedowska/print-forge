@@ -3,49 +3,33 @@
 import "./globals.css"
 import { Montserrat_Alternates, Albert_Sans } from "next/font/google"
 import Image from "next/image"
+import logoIcon from "@/public/printforge-logo-icon.svg"
+import fullLogo from "@/public/printforge-logo.svg"
+import Link from "next/link"
+import { LayoutProps } from "./types"
+import Navbar from "./components/Navbar"
 
 const montserratAlt = Montserrat_Alternates({
   variable: "--montserrat-alternates",
   subsets: ["latin"],
-  weight: "700",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  display: "swap",
 })
 
 const albert = Albert_Sans({
   variable: "--albert-sans",
   subsets: ["latin"],
-  weight: "400",
+  // weight: "400",
+  display: "swap",
 })
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }: LayoutProps) {
   return (
     <html lang="en">
-      <body className={`${montserratAlt.variable} ${albert.variable}`}>
-        <header>
-          <nav className="flex justify-between py-1.5 px-5">
-            <Image
-              src="/printforge-logo-icon.svg"
-              alt="printforge logo"
-              width={40}
-              height={40}
-              className="md:hidden"
-            />
-            <Image
-              src="/printforge-logo.svg"
-              alt="printforge logo"
-              width={180}
-              height={40}
-              className="hidden md:block"
-            />
-            <div className="flex gap-8 py-2">
-              <p className="uppercase">3D Models</p>
-              <p className="uppercase">About</p>
-            </div>
-          </nav>
-        </header>
+      <body
+        className={`${montserratAlt.variable} ${albert.variable} flex flex-col min-h-screen`}
+      >
+        <Navbar />
         {children}
       </body>
     </html>

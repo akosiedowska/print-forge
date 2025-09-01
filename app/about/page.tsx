@@ -21,7 +21,7 @@ const About = () => {
             <p className="text-sm uppercase tracking-widest">
               About printforge
             </p>
-            <h1 className="text-[40px] font-bold font-mont">
+            <h1 className="text-[40px] font-bold">
               Empowering makers worldwide
             </h1>
             <p className="text-2xl">
@@ -47,9 +47,7 @@ const About = () => {
             <article className="p-6 bg-white">
               <div className="flex gap-2 items-center mb-3">
                 <ImStack className="text-[28px]" />
-                <h3 className="text-[28px] font-bold font-mont">
-                  100K+ Models
-                </h3>
+                <h3 className="text-[28px] font-bold">100K+ Models</h3>
               </div>
               <p className="text-xl">
                 Access our vast library of community-created 3D models, from
@@ -59,9 +57,7 @@ const About = () => {
             <article className="p-6 bg-white border-gray-400 md:border-x">
               <div className="flex gap-2 items-center mb-3">
                 <GoGlobe className="text-[28px]" />
-                <h3 className="text-[28px] font-bold font-mont">
-                  Active Community
-                </h3>
+                <h3 className="text-[28px] font-bold">Active Community</h3>
               </div>
               <p className="text-xl">
                 Join thousands of makers who share tips, provide feedback, and
@@ -71,7 +67,7 @@ const About = () => {
             <article className="p-6 bg-white">
               <div className="flex gap-2 items-center mb-3">
                 <FaRegFlag className="text-[28px]" />
-                <h3 className="text-[28px] font-bold font-mont">Free to Use</h3>
+                <h3 className="text-[28px] font-bold">Free to Use</h3>
               </div>
               <p className="text-xl">
                 Most models are free to download, with optional premium features
@@ -86,7 +82,7 @@ const About = () => {
 
       <section className="container max-w-3xl px-4 py-8 mx-auto">
         <div className="prose max-w-none">
-          <h2 className="mb-4 text-[40px] font-bold font-mont">Our Vision</h2>
+          <h2 className="mb-4 text-[40px] font-bold">Our Vision</h2>
           <p className="mb-4 text-2xl">
             At PrintForge, we believe that 3D printing is revolutionizing the
             way we create, prototype, and manufacture. Our platform serves as a

@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -12,9 +13,11 @@ export default function Home() {
             Join our community of creators and explore a vast library of
             user-submitted models.
           </p>
-          <button className="self-start uppercase font-semibold py-3 px-6 t-black transition duration-200 bg-white border-2 border-black hover:bg-black hover:text-white cursor-pointer">
-            Browse models
-          </button>
+          <Link href="/3d-models">
+            <button className="self-start uppercase font-semibold py-3 px-6 t-black transition duration-200 bg-white border-2 border-black hover:bg-black hover:text-white cursor-pointer">
+              Browse models
+            </button>
+          </Link>
         </div>
         <Image src="/hero-img.png" alt="hero image" width={500} height={500} />
       </section>

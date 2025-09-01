@@ -3,17 +3,30 @@
 body {
   box-sizing: border-box;
   font-family: "Albert Sans", sans-serif;
-  font-family: var(--albert), sans-serif;
+  font-family: var(--albert-sans), sans-serif;
   color: #1e1e1e;
 }
 
+/* additional font 1st solution */
+/* add font-mont class to element */
 @theme inline {
   --font-mont: var(--montserrat-alternates);
 }
 
-/* .montserratAlt {
-  font-family: "Montserrat Alternates", sans-serif;
-} */
+@theme {
+  --color-orange-accent: #f77d36;
+}
+
+/* or */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--montserrat-alternates);
+}
+
 /* :root {
   --background: #ffffff;
   --foreground: #171717;
